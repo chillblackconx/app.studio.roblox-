@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créateur de Chandail Roblox Style Canva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>👕 Créateur de Chandail Roblox (Bêta)</h1>
+        <p>Style Canva : Personnalisez, puis téléchargez l'image PNG finale.</p>
+    </header>
+
+    <main>
+        <div id="design-editor">
+            <div id="canvas-container">
+                <div id="roblox-clothing-base">
+                    <img id="template-mask" src="roblox_template_mask.png" alt="Modèle Roblox">
+                </div>
+            </div>
+            
+            <button id="download-btn">⬇️ Télécharger le PNG</button>
+            <p class="note"> *Le téléchargement combinera la couleur et le modèle.</p>
+        </div>
+
+        <div id="controls-panel">
+            <h2>🛠️ Outils de Personnalisation</h2>
+            
+            <section class="control-group">
+                <h3>Couleur de Base du Chandail</h3>
+                <input type="color" id="color-picker" value="#3498db">
+            </section>
+
+            <section class="control-group">
+                <h3>Ajouter un Motif/Logo (Avancé)</h3>
+                <input type="file" id="logo-uploader" accept="image/*">
+                <p class="note">Pour un outil complet, vous auriez ici les options de positionnement et de redimensionnement de l'image.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Créateur de Vêtements Roblox | Propulsé par Canvas (JS)</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</body>
+</html>
